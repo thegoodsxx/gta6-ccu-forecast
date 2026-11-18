@@ -19,7 +19,7 @@ OUTPUT_DIR = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
 LEVELS = [0.05, 0.25, 0.5, 0.75, 0.95]
 Z = [-1.645, -0.674, 0, 0.674, 1.645]
 
-# Tuned hyperparameters (optimized via cross-validation on practice cases)
+# Tuned hyperparameters (optimized via cross-validation on practice cases: bandwidth 1.0, empirical blend 1.0)
 BANDWIDTH = 1.0        # log-space bandwidth for hour-1 similarity kernel
 PLATFORM_BOOST = 1.35  # boost for console / matching platforms
 RECENCY_BOOST = 0.03   # annual recency weight increment
